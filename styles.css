@@ -1,0 +1,177 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    justify-content: center;
+    align-items: center;
+    height: 100vh
+}
+
+header {
+    background-color: #0b3d91; /* NASA dark blue */
+    color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo img {
+    height: 50px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    text-decoration: none;
+    color: #ff4500; /* NASA red */
+}
+
+img {
+    max-width: 500px;
+    height: 500px;
+    border-radius: 8px;
+}
+
+main {
+    padding: 20px;
+}
+
+/* კარუსელი სტეილში */
+.carousel-container {
+    display: flex;
+    overflow: hidden;
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+    position: relative;
+    border-radius: 8px;
+}
+
+.carousel-image {
+    min-width: 100%;
+    height: 370px;
+    border-radius: 8px;
+    transition: transform 0.5s ease-in-out;
+    
+}
+/* კარუსელის გვერდი */
+
+.carousel-controls {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 0 20px;
+}
+.carousel-image {
+    transition: transform 0.5s ease-in-out;
+}
+.carousel-item {
+    display: none;
+}
+.carousel-item.active {
+    display: block;
+}
+button, #prev, #next  {
+    background-color: #0b3d91; /* NASA dark blue */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+#prev {
+    left: 10px;
+}
+
+#next {
+    right: 10px;
+}
+
+
+/* Dialog Box */
+dialog {
+    border: none;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#open-dialog {
+    background-color: #ff4500; /* NASA red */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+#yes-btn, #no-btn {
+    background-color: #0b3d91; /* NASA dark blue */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+
+
+/* kontactis gzavnili */
+/* კონტაქტები */
+
+.location {
+    width: 80%;
+    margin: auto;
+    padding: 80px 0;
+}
+
+.location iframe {
+    width: 100%;
+}
+
+.contact-us {
+    width: 80%;
+    margin: auto;
+}
+
+.contact-col {
+    flex-basis: 48%;
+    margin-bottom: 30px;
+}
+
+.contact-col div {
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.contact-col input, .contact-col textarea {
+width: 100%;
+padding: 15px;
+margin-bottom: 17px;
+outline: none;
+border: 1px solid #ccc;
+box-sizing: border-box;
+}
+    
+    
+
+
+
+
+
